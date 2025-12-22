@@ -6,13 +6,14 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: [['babel-plugin-react-compiler']],
+        plugins: [["babel-plugin-react-compiler"]],
       },
     }),
-    tailwindcss()
+    tailwindcss(),
   ],
-  base: '/dzface.github.io/',
+  base: "/",          
   build: {
-    outDir: 'docs'
-  }
-})
+    outDir: "docs", 
+    emptyOutDir: true
+  },
+});
