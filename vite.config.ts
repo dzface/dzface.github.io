@@ -11,7 +11,7 @@ export default defineConfig({
     }),
     tailwindcss()
   ],
-  base: '/dzface/',
+  base: '/',
   build: {
     outDir: 'docs'
   }
